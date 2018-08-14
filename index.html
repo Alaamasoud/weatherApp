@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+</head>
+
+<body onload="getTime(); getUserLocation()">
+  <div class="page">
+       <section class="fullHeight" id="wheatherBlock">
+           <div class="mainWidth">
+               <div class="clear">
+                   <div class="wheatherBlock paddingAllX2">
+                       
+                        <h2>Weather App</h2>
+                        <div class="inputHolder">
+                            <input type="text" id="search" placeholder="ENTER CITY NAME">
+                            <button id="getBtn" onclick="getWeather(); GETbg()">SEARCH</button>
+                        </div>
+                        <div class="weatherHolder">
+                           <div class="land">
+                                <h3 id="cityName"></h2>
+<!--                                <img src="https://www.countryflags.io/nl/flat/64.png" alt="">    -->
+                           </div>
+                            <span class="descrip" id="descrip"></span>
+                            <img id="icon" src="" alt="">
+                            <h3 class="temp" id="temp"></h3>
+                        </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+  </div>
+    <script src="js/weatherApp2.js"></script>
+    <script src="js/getApi.js"></script>
+</body>
+</html>
